@@ -1,0 +1,509 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #222;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    border: none;
+}
+
+a, a:visited, a:hover {
+    color: #0050c5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 48px;
+    font-weight: 300;
+    color: #333;
+    margin: 12px 0 48px 0;
+    text-align: center;
+}
+
+
+/* Header */
+
+#header-microsoft-logo {
+    margin-top: 23px;
+    margin-left: 15px;
+    float: left;
+}
+
+#header-microsoft-logo img {
+	margin-right: 23px;
+}
+
+#header-microsoft-logo-svg {
+    height: 23px;
+    width: 102px;
+}
+
+#brand {
+    font-size: 18px;
+    font-family: wf_segoe-ui_normal, "Segoe UI", "Segeo WP", Tahoma, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    white-space: nowrap;
+    line-height: 23px;
+    float: right;
+    color: #333;
+}
+
+#brand-name::after {
+    content: "Developer";
+		margin-left: 18px;
+}
+
+#header {
+    min-height: 70px;
+    max-width: 1412px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 83.5rem;
+    position: relative;
+}
+
+select {
+    display: inline-block;
+    overflow: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-left: .5em;
+    padding-right: 2.8em;
+    vertical-align: middle;
+    height: 28px;
+    border-radius: 2px;
+    font-size: .8em;
+    line-height: 16px;
+    outline: 0;
+    text-overflow: ellipsis;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(45deg, transparent 50%, #707070 0), -webkit-linear-gradient(315deg, #707070 50%, transparent 0);
+    background-image: linear-gradient(45deg, transparent 50%, #707070 0), linear-gradient(135deg, #707070 50%, transparent 0);
+    background-position: calc(100% - 13px) 11px, calc(100% - 8px) 11px;
+    background-size: 5px 5px, 5px 6px;
+    background-repeat: no-repeat;
+    background-color: #fcfcfc;
+    border: 1px solid #e3e3e3;
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 3em 1em 2.5em 1em;
+    background-color: #1a1a1a;
+    margin: 0;
+}
+
+#footer .links {
+    font-size: 0.8em;
+    float: right;
+    text-align: right
+}
+
+#footer .links li {
+    display: inline-block;
+    margin-left: 0.2em;
+    margin-right: 0
+}
+
+#footer .links li:last-child {
+    margin-right: 0
+}
+
+#footer .links li:last-child:after {
+    content: none
+}
+
+#footer .links li:after {
+    margin-left: 0.5em;
+    content: "•";
+    color: #ababab
+}
+
+#footer .links a {
+    color: #3d88c0;
+}
+
+@media only screen and (max-width: 40em) {
+    #footer .links {
+        margin-top: 1em;
+        float: none;
+        text-align: center
+    }
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 83.5rem;
+    position: relative;
+}
+
+.container::before, .container::after {
+    content: " ";
+    display: table;
+}
+
+.container::after {
+    clear: both;
+}
+
+
+/* controls the left and right outer margins of the content areas */
+
+.section-width {
+    text-align: left;
+    overflow: hidden;
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+
+/* video area */
+
+
+/* video area */
+
+.hero {
+    position: relative;
+    background-color: #222;
+    padding: 20px 0 48px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 300;
+    color: #bfbfbf;
+    text-align: center;
+    margin: 18px 0 48px 0;
+    padding: 0;
+}
+
+.video-frame {
+    float: left;
+    margin: 0 40px 0 0;
+    width: 800px;
+    height: 450px;
+}
+
+.content-stream {
+    float: left;
+    width: calc(100% - 840px);
+}
+
+.stream {
+    overflow: auto;
+    height: 450px;
+    padding: 0 12px 0 0;
+}
+
+
+/* Hero cards */
+
+.stream-card {
+    width: 100%;
+    height: 90px;
+    background-color: #3a3a3a;
+    border-left: 7px solid #0078d7;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.stream-card:hover {
+    border-left: 7px solid #d83b01;
+}
+
+.stream-card h3 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    margin: 0 0 18px 0;
+    padding: 0px
+}
+
+.stream a, .streama:visited, .streama:hover {
+    color: #ebebeb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.stream a:hover {
+    color: #92c6ff;
+    text-decoration: none;
+}
+
+
+/* Get started products area */
+
+.products {
+    padding: 48px 0 60px 0;
+    background-color: #e8e8e8;
+}
+
+.products .section-width {
+    padding: 0;
+}
+
+.products-inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* Build an app icon area */
+
+.build-app {
+    padding: 48px 0 24px 0;
+    background-color: #fff;
+}
+
+.app-icon-shell {
+    position: relative;
+    float: left;
+    width: 16.66%;
+    min-width: 120px;
+    height: 150px;
+}
+
+.app-icon {
+    width: 100px;
+    height: 64px;
+    margin: 0 auto;
+}
+
+.app-icon-label-shell {
+    position: absolute;
+    width: 100%;
+    height: 18px;
+    top: 80px;
+    left: 0;
+}
+
+.app-icon-label {
+    font-size: 18px;
+    color: #767676;
+    text-align: center;
+}
+
+
+/* serevices area */
+
+.services {
+    padding: 48px 0 60px 0;
+    background-color: #e8e8e8;
+}
+
+.card {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    min-width: 260px;
+    max-height: 440px;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    margin: 0 0 24px 0;
+    background-color: #fff;
+		min-height: 440px;
+}
+
+.card-text a, .card-text a:visited {
+    color: #6e6e6e;
+    text-decoration: none;
+}
+
+.card-text {
+    padding: 0 12px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-left: 30px;
+		margin-right: 30px;
+}
+
+.card:hover .card-text a {
+    color: #005eba;
+}
+
+.card:hover .card-text a:hover {
+    text-decoration: underline;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 16px 0 8px 0;
+}
+
+.card ul {
+    margin: 10px 0 0 0;
+    padding: 0 0 0 14px;
+}
+
+.card ul li {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 8px 0 0 0;
+    color: #6e6e6e;
+}
+
+.card-image-outer {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    background-color: #429BE1;
+    display: flex;
+    /* establish flex container */
+    align-items: center;
+    /* vertically center flex items */
+}
+
+.card-image-outer p {
+    color: #fff;
+    margin: 0 0 0 36px;
+    font-family: wf_segoe-ui_light, "Segoe UI Light", "Segeo WP", Tahoma, Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+
+/* community links */
+
+.community {
+    padding: 48px 0 60px 0;
+    background-color: #429BE1;
+}
+
+.community h2 {
+    color: #fff;
+}
+
+.community ul {
+    text-align: center;
+}
+
+.community ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0 12px 0 12px;
+    margin: 0 12px 18px 12px;
+}
+
+.community li a, .community li a:visited, .community li a:hover {
+    color: #fff;
+    text-decoration: none;
+    text-style: none;
+}
+
+.community li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* columns for responsiveness */
+
+.col-50-outer {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+
+.col-50-inner {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    padding: 0 18px;
+}
+
+
+/* styles for IE scroll bar in the Hero  */
+
+.stream {
+    scrollbar-face-color: #666;
+    scrollbar-track-color: #000;
+    scrollbar-arrow-color: #666;
+    scrollbar-highlight-color: #000;
+    scrollbar-shadow-color: #000;
+    scrollbar-3dlight-color: #000;
+    scrollbar-darkshadow-color: #000;
+    scrollbar-width: 6px;
+}
+
+
+/* styles for Chrome scroll bar in the hero  */
+
+.stream::-webkit-scrollbar {
+    width: 12px;
+    height: 2px;
+}
+
+.stream::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.stream::-webkit-scrollbar-thumb {
+    background: #666;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+.stream::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+.stream::-webkit-scrollbar-thumb:active {
+    background: #666;
+}
+
+.stream::-webkit-scrollbar-track {
+    background: #000;
+    border: 0px none #000;
+    border-radius: 0px;
+}
+
+.stream::-webkit-scrollbar-track:hover {
+    background: #000;
+}
+
+.stream::-webkit-scrollbar-track:active {
+    background: #000;
+}
+
+.stream::-webkit-scrollbar-corner {
+    background: transparent;
+}

@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    background: white;
+    min-width: 320px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+@font-face {
+    font-family: "UIFontNormal";
+    src: url('//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot.eot');
+    src: url('//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot?#iefix') format('embedded-opentype'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.woff2') format('woff2'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.woff') format('woff'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.ttf')  format('truetype'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.svg') format('svg');
+}
+
+@font-face {
+    font-family: "UIFontBold";
+    src: url('//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.eot.eot');
+    src: url('//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.eot?#iefix') format('embedded-opentype'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.woff2') format('woff2'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.woff') format('woff'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.ttf')  format('truetype'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.svg') format('svg');
+}
+
+@font-face {
+    font-family: "UIFontSemilight";
+    src: url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semilight/latest.eot.eot');
+    src: url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semilight/latest.eot?#iefix') format('embedded-opentype'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semilight/latest.woff2') format('woff2'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semilight/latest.woff') format('woff'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semilight/latest.ttf')  format('truetype'),
+         url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semilight/latest.svg') format('svg');
+}
+
+/* Try to use local font first to prevent the flickering */
+
+body,
+#build > h2,
+#build > p > a {
+    font-weight: normal;
+    font-family: "Segoe UI", "UIFontNormal", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resourcelist h2,
+.resourcelist h3,
+.resourcelist > div > p > a {
+    font-weight: bold;
+    font-family: "Segoe UI", "UIFontBold", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resourcelist h1 {
+    font-weight: 300;
+    font-family: "Segoe UI", "UIFontSemilight", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+#header {
+    margin: 15px 0;
+    text-align: center;
+}
+
+#header img {
+    height: 24px;
+}
+
+
+
+#footer {
+    margin: 70px 0 60px 0;
+    padding: 20px 70px;
+    font-size: 10pt;
+}
+
+#footer:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+#footer img {
+    height: 20px;
+}
+
+#footer > div {
+    float: right;
+}
+
+#footer > div > p {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#footer > div > p > a,
+#footer > div > p > a:link,
+#footer > div > p > a:visited,
+#footer > div > p > a:hover,
+#footer > div > p > a:active {
+    color: black;
+}
+
+
+
+#build {
+    width: 100%;
+    background: url("assets/rainier.jpg") center no-repeat;
+    background-size: cover;
+    background-color: #6F635F;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+
+#build > img {
+    margin: 40px 20px 0 20px;
+    height: 96px;
+}
+
+#build > h2 {
+    margin: 180px auto;
+    padding: 0 50px;
+    font-size: 28pt;
+    max-width: 1000px;
+}
+
+#build > p.watch {
+    margin: 55px 0 60px 0;
+    font-size: 16pt;
+}
+
+#build > p.watch > a {
+    border: 2px solid white;
+    padding: 10px 35px;
+}
+
+#build > p.watch > a,
+#build > p.watch > a:link,
+#build > p.watch > a:visited {
+    color: white;
+}
+
+#build > p.watch > a:hover,
+#build > p.watch > a:active {
+    background: white;
+    color: #1f3d49;
+}
+
+#build > p.description {
+    margin: 0 50px 25px 50px;
+    font-size: 12pt;
+    opacity: 0.66;
+}
+
+#build > p.description > span {
+    margin: 0 10px;
+}
+
+
+
+.resourcelist {
+    text-align: center;
+}
+
+.resourcelist.primary {
+    margin-top: 85px;
+}
+
+.resourcelist.secondary {
+    margin-top: 120px;
+    padding: 75px 0 90px 0;
+    background: #f7f7f7;
+}
+
+.resourcelist h1 {
+    font-size: 20pt;
+}
+
+.resourcelist > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin: 70px 30px 0 30px;
+}
+
+.resourcelist > div > a {
+    display: block;
+}
+
+.resourcelist > div img {
+    height: 48px;
+}
+
+.resourcelist div.title {
+    margin-top: 25px;
+}
+
+.resourcelist h2 {
+    display: inline-block;
+    font-size: 16pt;
+    vertical-align: bottom;
+}
+
+.resourcelist.secondary > div {
+    margin-top: 60px;
+}
+
+.resourcelist.secondary div.title > span {
+    height: 3.2em;
+    margin-top: 0;
+    display: inline-block;
+}
+
+html:lang(de) .resourcelist.secondary div.title > span {
+    height: 5.1em;
+}
+
+
+.resourcelist h3 {
+    margin-top: 9px;
+    font-size: 13pt;
+}
+
+html:lang(en) .resourcelist h3,
+html:lang(da) .resourcelist h3,
+html:lang(he) .resourcelist h3,
+html:lang(ja) .resourcelist h3,
+html:lang(ko) .resourcelist h3,
+html:lang(no) .resourcelist h3,
+html:lang(zh-Hans) .resourcelist h3,
+html:lang(zh-Hant) .resourcelist h3 {
+    height: 2.7em;
+}
+
+html:lang(ar) .resourcelist h3,
+html:lang(cs) .resourcelist h3,
+html:lang(de) .resourcelist h3,
+html:lang(el) .resourcelist h3,
+html:lang(es) .resourcelist h3,
+html:lang(fi) .resourcelist h3,
+html:lang(fr) .resourcelist h3,
+html:lang(it) .resourcelist h3,
+html:lang(pl) .resourcelist h3,
+html:lang(pt) .resourcelist h3,
+html:lang(sv) .resourcelist h3 {
+    height: 4.1em;
+}
+
+html:lang(hu) .resourcelist h3,
+html:lang(nl) .resourcelist h3,
+html:lang(ru) .resourcelist h3 {
+    height: 5.4em;
+}
+
+
+.resourcelist > div > ul {
+    margin-top: 25px;
+    list-style: none;
+}
+
+.resourcelist > div li {
+    font-size: 12pt;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: "Segoe UI", "UIFontBold", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html:lang(cs) .resourcelist.primary > div li:first-child,
+html:lang(da) .resourcelist.primary > div li:last-child,
+html:lang(el) .resourcelist.primary > div li:first-child,
+html:lang(el) .resourcelist.primary > div li:nth-child(2),
+html:lang(ko) .resourcelist.secondary > div li:nth-last-child(2),
+html:lang(ru) .resourcelist.primary > div li:last-child,
+html:lang(zh-Hans) .resourcelist.secondary > div li:nth-last-child(2) {
+    height: 2.7em;
+}
+
+
+.resourcelist > div li > a,
+.resourcelist > div li > a:link,
+.resourcelist > div li > a:visited,
+.resourcelist > div li > a:hover,
+.resourcelist > div li > a:active {
+    color: black;
+}
+
+.resourcelist > div > p {
+    margin-top: 30px;
+}
+
+.resourcelist > div > p > a {
+    font-size: 12pt;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 12px 6px 12px;
+}
+
+#sec-windows,
+#sec-windows > a,
+#sec-windows > a:link,
+#sec-windows > a:visited,
+#sec-windows > a:hover,
+#sec-windows > a:active,
+#sec-windows li > a,
+#sec-windows li > a:link,
+#sec-windows li > a:visited {
+    color: #0078d7;
+}
+
+#sec-windows li > a:hover,
+#sec-windows li > a:active {
+    color: #005fbe;
+}
+
+#sec-azure,
+#sec-azure > a,
+#sec-azure > a:link,
+#sec-azure > a:visited,
+#sec-azure > a:hover,
+#sec-azure > a:active,
+#sec-azure li > a,
+#sec-azure li > a:link,
+#sec-azure li > a:visited {
+    color: #0078d7;
+}
+
+#sec-azure li > a:hover,
+#sec-azure li > a:active {
+    color: #1986bf;
+}
+
+#sec-vs,
+#sec-vs > a,
+#sec-vs > a:link,
+#sec-vs > a:visited,
+#sec-vs > a:hover,
+#sec-vs > a:active,
+#sec-vs li > a,
+#sec-vs li > a:link,
+#sec-vs li > a:visited {
+    color: #5c2e91;
+}
+
+#sec-vs li > a:hover,
+#sec-vs li > a:active {
+    color: #431578;
+}
+
+#sec-office,
+#sec-office > a,
+#sec-office > a:link,
+#sec-office > a:visited,
+#sec-office > a:hover,
+#sec-office > a:active,
+#sec-office li > a,
+#sec-office li > a:link,
+#sec-office li > a:visited {
+    color: #dc3c00;
+}
+
+#sec-office li > a:hover,
+#sec-office li > a:active {
+    color: #c32300;
+}
+
+#sec-windows > p > a,
+#sec-windows > p > a:link,
+#sec-windows > p > a:visited {
+    color: #0078d7;
+    border-color: #0078d7;
+}
+
+#sec-windows > p > a:hover,
+#sec-windows > p > a:active {
+    background: #0078d7;
+    color: white;
+}
+
+#sec-azure > p > a,
+#sec-azure > p > a:link,
+#sec-azure > p > a:visited {
+    color: #0078d7;
+    border-color: #0078d7;
+}
+
+#sec-azure > p > a:hover,
+#sec-azure > p > a:active {
+    background: #0078d7;
+    color: white;
+}
+
+#sec-vs > p > a,
+#sec-vs > p > a:link,
+#sec-vs > p > a:visited {
+    color: #5c2e91;
+    border-color: #5c2e91;
+}
+
+#sec-vs > p > a:hover,
+#sec-vs > p > a:active {
+    background: #5c2e91;
+    color: white;
+}
+
+#sec-office > p > a,
+#sec-office > p > a:link,
+#sec-office > p > a:visited {
+    color: #dc3c00;
+    border-color: #dc3c00;
+}
+
+#sec-office > p > a:hover,
+#sec-office > p > a:active {
+    background: #dc3c00;
+    color: white;
+}

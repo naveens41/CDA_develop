@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+/* video iframe size, height is .5625 */
+@media screen and (min-width: 0) {
+	.video-frame {
+		float:left;
+		margin: 0 40px 0 0;
+		width: 768px;
+		height: 432px;
+	}
+}
+
+
+
+/* Hero article links */
+@media screen and (min-width: 0) {
+	.content-stream {
+		clear: both;
+		width: 100%;
+		margin-top: 32px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.content-stream {
+		clear: none;
+		float:left;	
+		width: calc(100% - 808px);
+		margin-top: 0;
+	}
+}
+
+
+
+/* Build an app icon layout  */
+@media screen and (min-width: 0) {
+.app-icon-shell {
+	min-width: 140px;
+	}
+}
+@media screen and (min-width: 1150px) {
+.app-icon-shell {
+	min-width: 120px;
+	}
+}
+
+
+
+/* These 2 styles control layout for the Get Started proudct buttons and the Services cards */
+@media screen and (min-width: 0px) {
+	.col-50-outer {
+		float: left;
+		width: 100%;
+		overflow: hidden;
+	}
+	.col-50-inner {
+		float: left;
+		width: 100%;
+		overflow: hidden;
+		padding:0 18px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.col-50-outer {
+		float: left;
+		width: 100%;
+		overflow: hidden;
+	}
+	.col-50-inner {
+		float: left;
+		width: 50%;
+		overflow: hidden;
+		padding:0 18px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.col-50-outer {
+		float: left;
+		width: 50%;
+		overflow: hidden;
+	}
+	.col-50-inner {
+		float: left;
+		width: 50%;
+		overflow: hidden;
+		padding:0 18px;
+	}
+}
+
+
+
+/* Links in the Programs and Community section */
+@media screen and (min-width: 0px) {
+	.community ul li {
+		display: block;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.community ul li {
+		display: inline-block;
+	}
+}
+
+
+
